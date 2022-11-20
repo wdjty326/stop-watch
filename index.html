@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stop Watch</title>
+</head>
+<body>
+	<main class="stop-watch">
+		<p class="stop-watch-timer">00:000</p>
+		<div class="stop-watch-control">
+		</div>
+		<article class="stop-watch-lap-area">
+			<ul class="stop-watch-lap-list"></ul>
+		</article>
+	</main>
+	<template id="stop-watch-lap">
+		<li data-lap="${lap}">
+			Lap ${idx} : ${lapTime}
+		</li>
+	</template>
+	<script src="./stop-watch.js"></script>
+</body>
+</html>
